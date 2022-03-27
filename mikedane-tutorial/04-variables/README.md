@@ -12,3 +12,7 @@ document.write("He really liked the name George <br/>");
 document.write("But didn't like being 70 <br/>");
 ```
 *The difference is that we will create variabes for the name and age, which will allow us to manipulate and change the values of the variables as we please.*
+
+**REMEMBER!!**
+
+It's better to have a variable name that's long and descriptive (even though it might take more time to type out), than one that's just a single letter or confusing!
