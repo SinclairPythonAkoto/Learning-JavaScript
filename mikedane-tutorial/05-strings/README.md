@@ -104,5 +104,19 @@ document.write( phrase.includes("are") );
 ### More String Methods ###
 You can find examples of more string methods and how to use them [here](https://www.w3schools.com/jsref/jsref_obj_string.asp).
 ```
-
+charCodeAt()
+concat()
+fromCharCode()
+localeCompare()
+match()
+repeat()
+search()
+slice()
+split()
+substr()
+toLocaleLowerCase()
+toLocaleUpperCase()
+toString()
+trim()
+valueOf()
 ```
