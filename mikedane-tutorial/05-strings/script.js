@@ -1,3 +1,1 @@
-alert("Creating Strings");
-
-
+alert("Creating Variables!");
