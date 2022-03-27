@@ -14,7 +14,7 @@ function sayHi(){
 
 When we want to call the function all we need to do is write the name of the function followed by the parenthesis.
 ```
-sayHi()
+sayHi();
 ```
 
 ### Parameters and Arguments ###
@@ -33,7 +33,7 @@ function sayHi(name){
     document.write( "Write " + name );
 }
 
-sayHi("Sinclair")
+sayHi("Sinclair");
 ```
 
 *In the case above we only specified one single parameter, but you can specify as many as you want (although any more than 4 or 5 is generally considered too many).*
@@ -49,5 +49,7 @@ function sayHi(name, age){
     document.write("Hello " + name + " you are " + age);
 }
 
-sayHi("Sinclair", 35)
+sayHi("Sinclair", 35);
 ```
+
+Click [here](https://www.w3schools.com/js/js_functions.asp) to learn more about functions.
