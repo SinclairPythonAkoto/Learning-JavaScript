@@ -11,7 +11,6 @@ As explained before, not only can you change the value of attributes, you can al
 #### Code within HTML ####
 ```
 <h1 id="userName" nickname="sakoto">Sinclair Python Akoto</h1>
-<a id="link" href="https://www.google.com">Search Internet</a>
 <script src="script.js"></script>
 ```
 
@@ -22,10 +21,6 @@ header.style.color = blue;
 
 document.write( header.getElementbyAttribute("nickname") );
 header.innerHTML = "Sinclair JavaScript Akoto";
-
-var link = document.getElementById("link");
-link.href = "https://www.amazon.com";
-link.innerHTML = "Search products";
 ```
 
 **REMEMBER!!**
