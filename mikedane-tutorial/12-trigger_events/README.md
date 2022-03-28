@@ -42,7 +42,7 @@ In the JavaScript file we will need to change the function so it accepts a param
 
 #### HTML file ####
 ```
-<button id="myBtn" onclick="handleClick(this)";">Click Here</button>
+<button id="myBtn" onclick="handleClick(this)">Click Here</button>
 <script src="script.js"></script>
 ```
 
@@ -84,7 +84,7 @@ We can create this in a separate `addEventListener`.
 ```
 //adding the mouseout event listener
 
-image.addEventListener("mouseoutr", function(){
+image.addEventListener("mouseout", function(){
     this.style = "";
     this.width = 100;
 });
