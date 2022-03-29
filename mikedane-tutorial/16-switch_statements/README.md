@@ -45,4 +45,4 @@ Generally when you have a situation where you're using a switch the default will
 
 In the case of the program above it's printing out `Invalid Grade` for any grade that's not an `A` or an `F`.
 
-*Most of the time you'll want to include a default statement.*
+***Most of the time you'll want to include a default statement.***
