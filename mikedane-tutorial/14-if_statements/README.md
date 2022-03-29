@@ -30,9 +30,9 @@ var isStudent = true;
 var isSmart = true;
 
 if(isStudent && isSmart){
-    document.write("You are a student");
+    document.write("You are a smart student");
 } else if(isStudent && !isSmart){
-    document.write("You are not a smart student");
+    document.write("You are a not smart student");
 } else {
     document.write("You are not a student and not smart");
 }
@@ -43,8 +43,23 @@ if(1 > 3){
     document.write("number comparison was true");
 }
 document.write("<br>");
+```
 
-if("dog" != "dog"){
-    document.write("string comparison was true");
+You might be looking at the code and wondering what the symbols mean; don't panic, we shall go through them now!
+
+- The `&&` symbols means that both conditions need to be met.  So for our exmpole, if `isStudent` is `true` **and** `isSmart` is `true`, then we print out the statement.
+- We see the exclaimation mark being used before the variable name; this is when we want to declare is **not** what it's defined as.  Basically the **opposite** of the defined variable.  So in our example, when `!isSmart` is actually `false` because we defined it to be `true`.
+
+- There are other comparisons such as `||` which is the **or** comparison.  This means only one out of the conditions needs to be met.
+```
+if(isStudent || isSmart){
+    document.write("You maybe a student or you maybe smart");
 }
 ```
+
+- `>` - Greater than..
+- `<` - Less than..
+- `>=` - Greater or equal to..
+- `<=` - Less or equal to..
+- `!=` - Not equal to..
+- `==` - Equal to..
