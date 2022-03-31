@@ -22,5 +22,5 @@ interating through a list
 */
 var friends = ["Jim", "John", "Jane", "Jason", "Jack", "Joseph", "Juliet"]
 for(var index = 0; index < friends.length; index++){
-	document.write(friends[index] + "<br>");
+    document.write(friends[index] + "<br>");
 }
