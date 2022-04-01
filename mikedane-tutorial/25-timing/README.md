@@ -5,7 +5,7 @@ There are specific timing functions that allow you to do certain things after ce
 We will cover how to use `setTimeout` and `setInterval`.
 
 #### Set Time Out ####
-The `setTimeOut` function takes in 2x parameters in order to work. You will need to declare your function as the first function, then for the second function the duration in **milliseconds**.  When the `setTimeOut` function is activated, the code will execute after the duratoion specified.
+The `setTimeout` function takes in 2x parameters in order to work. You will need to declare your function as the first function, then for the second function the duration in **milliseconds**.  When the `setTimeout` function is activated, the code will execute after the duratoion specified.
 ```
 <button onClick="setTimeout(funcName, 3000)">Click Me</button>
 ```
