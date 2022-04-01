@@ -6,6 +6,6 @@ function helloWorld(){
 }
 
 // set interval
-function sayhI(){
+function sayhi(){
     alert("Hello user, See you again in 5 seconds!");
 }
