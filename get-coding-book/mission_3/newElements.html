@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Elements</title>
+    <script>
+        function addItem(){
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            document.getElementById("list").appendChild(newItem);
+        }
+    </script>
+</head>
+<body>
+    <p>Special Exhibition To-Do List</p>
+    <br/>
+    <input type="text" id="box" value="Type here to add task"/>
+    <br/>
+    <input type="button" value="Add item" onclick="addItem();"/>
+    <br/>
+    <div id="list"></div>
+</body>
+</html>
