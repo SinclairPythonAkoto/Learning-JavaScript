@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <script>
+        function save(){
+            var newItem = document.getElementById("box").value;
+            localStorage.box = newItem;
+        }
+        function load(){
+            var savedDiv = document.getElementById("savedList");
+            savedDiv.innerHTML = localStorage.box;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="box" value="Type here to add task"/><br/>
+    <input type="button" id="save" value="Save" onclick="save();"/><br/>
+    <input type="button" id="load" value="Load" onclick="load();"/><br/>
+    Save item: <div id="savedList"></div>
+</body>
+</html>
