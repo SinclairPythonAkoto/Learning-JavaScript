@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List App</title>
     <script src="script.js"></script>
+    <style>
+        .header{
+            height: 75px;
+            width: 350px;
+            background-color: lightblue;
+            float: center;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .app{
+            height: 600px;
+            width: 350px;
+            background-color: lightgreen;
+            float: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        input[type="button"]{
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <p>The House of Volkov</p>
-    <p>Special Exhibition To-Do List</p>
-    <br/>
-    <input type="text" id="box" value="Type here to add a task"/>
-    <br/>
-    <input type="button" value="Add item" onclick="addItem();"/>
-    <div id="list"></div>
+    <div class="header">
+        <img src="VolkovLogo.jpg" style="float: left;" width=100px;>
+        <p>The House of Volkov</p>
+    </div>
+    <div class="app">
+        <p style="font-size: 18px; font-style: bold;">Special Exhibition To-Do List</p>
+        <input type="text" id="box" value="Type here to add a task"/>
+        <br/>
+        <input style="button" value="Add Item" onclick="addItem();"/>
+        <br/>
+        <img src="MrVolkov.jpg" style="float: right;" width=100px;>
+        <div id="list"></div>
+    </div>
     <script>
         if(localStorage.storedList){
             loadList();
