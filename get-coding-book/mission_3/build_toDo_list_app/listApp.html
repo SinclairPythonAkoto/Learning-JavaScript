@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <p>The House of Volkov</p>
+    <p>Special Exhibition To-Do List</p>
+    <br/>
+    <input type="text" id="box" value="Type here to add a task"/>
+    <br/>
+    <input type="button" value="Add item" onclick="addItem();"/>
+    <div id="list"></div>
+    <script>
+        if(localStorage.storedList){
+            loadList();
+        }
+    </script>
+</body>
+</html>
