@@ -1,6 +1,6 @@
 # Making a CRUD App with JavaScript, HTML & CSS #
 
-Source: [CodAffection - YouTube](https://www.youtube.com/watch?v=-rNQeJi3Wp4)
+Source: [LearningZity- YouTube](https://www.youtube.com/watch?v=MKD0Vsu0Ikw)
 
 For this project we will make a basic **CRUD** *(create, read, update, delete)* web app using just JavaScript, HTML & CSS.
 
