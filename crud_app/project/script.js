@@ -1,7 +1,14 @@
 var selectdRow = null
 
-function onFormSubmit() {
-
+function onFormSubmit(e) {
+    event.preventDefault();
+    var formData = readFormData();
+    if (selectedRow == null) {
+        insertNewRecord(formData);
+    } else {
+        updateRecord(formData);
+    }
+    resetForm();
 }
 
 
@@ -57,4 +64,11 @@ function onDelete(td) {
     }
 }
 
-
+// Reset the data
+function resetForm() {
+    document.getElementById("productCode").value = '';
+    document.getElementById("product").value = '';
+    document.getElementById("qty").value = '';
+    document.getElementById("perPrice").value = '';
+    selectedRow = null;
+}
