@@ -32,3 +32,18 @@ function insertNewRecord(data) {
     cell4.innerHTML = `<button onclick="onEdit(this)">Edit</button>
                        <button onclick="onDelete(this)">Delete</button>`;
 }
+
+// UPDATE the data
+function onEdit(td) {
+    selectedRow = td.parentElement.parentElement;
+    document.getElementById("productCode").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("product").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("qty").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("perPrice").value = selectedRow.cells[3].innerHTML;
+}
+function updateRecord(formData) {
+    selectedRow.cells[0].innerHTML = formData.productCode;
+    selectedRow.cells[1].innerHTML = formData.product;
+    selectedRow.cells[2].innerHTML = formData.qty;
+    selectedRow.cells[3].innerHTML = formData.perPrice;
+}
