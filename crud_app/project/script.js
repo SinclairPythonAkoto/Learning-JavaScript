@@ -47,3 +47,14 @@ function updateRecord(formData) {
     selectedRow.cells[2].innerHTML = formData.qty;
     selectedRow.cells[3].innerHTML = formData.perPrice;
 }
+
+// DELETE the data
+function onDelete(td) {
+    if (confirm('Do you want to delete this record?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById('storeList').deleteRow(row.rowIndex);
+	resetForm();
+    }
+}
+
+
