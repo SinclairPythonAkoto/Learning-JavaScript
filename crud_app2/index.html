@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CRUD Operations</title>
+    <meta name="description" content="Creating a CRUD table in JavaScript">
+    <style>
+        table {
+            width: 70%;
+	}
+	table, th, td {
+            border: solid 1px #DDD;
+	    border-collapse: collapse;
+	    padding: 2px 3px;
+	    text-align: center;
+	}
+    </style>
+</head>
+<body onload="createTable()">
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()"/>
+    </p>
+    <div id="cont"></div>
+    <p>
+        <input type="button" id="btn" value="Submit Data" onclick="submit()"/>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
