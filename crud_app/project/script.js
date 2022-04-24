@@ -1,4 +1,4 @@
-var selectdRow = null
+var selectdRow = null;
 
 function onFormSubmit(e) {
     event.preventDefault();
