@@ -50,3 +50,9 @@ function addRow() {
 	}
     }
 }
+
+// DELETE a row
+function removeRow(oButton) {
+    var empTab = document.getElementById('empTable');
+    empTab.deleteRow(oButton.parentNode.parentNode.rowIndex);    // button -> td -> tr
+}
