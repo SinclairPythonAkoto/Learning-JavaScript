@@ -6,24 +6,28 @@
     <meta name="description" content="Creating a CRUD table in JavaScript">
     <style>
         table {
-            width: 70%;
+            width: 100%;
 	}
 	table, th, td {
-            border: solid 1px #DDD;
+            border: soldi 1px #DDD;
 	    border-collapse: collapse;
 	    padding: 2px 3px;
 	    text-align: center;
 	}
+	input[type='button'] {
+            cursor: pointer;
+	    border: none;
+	    color: #FFF;
+	}
+	input[type='text'], select {
+            text-align: center;
+	    border: solid 1px #CCC;
+	    width: auto;
+	    padding: 2px 3px;
+	}
     </style>
 </head>
-<body onload="createTable()">
-    <p>
-        <input type="button" id="addRow" value="Add New Row" onclick="addRow()"/>
-    </p>
-    <div id="cont"></div>
-    <p>
-        <input type="button" id="btn" value="Submit Data" onclick="submit()"/>
-    </p>
+<body>
     <script src="script.js"></script>
 </body>
 </html>
