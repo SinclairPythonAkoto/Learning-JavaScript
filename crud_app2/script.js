@@ -56,3 +56,22 @@ function removeRow(oButton) {
     var empTab = document.getElementById('empTable');
     empTab.deleteRow(oButton.parentNode.parentNode.rowIndex);    // button -> td -> tr
 }
+
+// function to extract & submit table data
+function submit() {
+    var myTab = document.getElementById('empTable');
+    var arrayValues = new Array();
+    // loop through each row of the table
+    for (row = 1; row < myTab.rows.length - 1; row++) {
+        // loop through each cell in a row
+        for (count = 0; count < myTab.rows[row].cells.length; count++) {
+            var element = myTab.rows.item(row).cells[count];
+	    if (element.childNodes[0].getAttribute('type') == 'text') {
+                arrayValues.push("'" + element.childNodes[0].value + "'");
+	    }
+	}
+    }
+
+    // finally show the result in the console
+    console.log(arrayValues);
+}
